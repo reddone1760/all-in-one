@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TODO
 
-## Getting Started
+- Warning: Text content did not match. Server: "light" Client: "dark"
+- Sidebar
+  - Sidebar.js:485 - Search Input make responsive
+  - ~~Sidebar.js | SidebarGroup.js | SidebarLink.js | SidebarLeftLik.js - Add Themes (Dark / Light)~~
+  - SidebarLink.js - Push to Page by neasted pages dont work
+  - Remove ThemeSwitch at Sidebar
+- KeyBoard Press detect ( Layout.js )
+- Add func --> localstor last pages and open directly in index.js exp: lastOpendNotes: "##PAGE_ID##"
+- Todo App
+  - TopBar.js - Add Drop Menue
+  - Function to transver undoing taks from today to tomorrow
+- Add breackpoints ( Make responsive )
+- Index Cards
+  - If something is true push it 2 day
+  - If the same card is true the secound time push it 3 day, and so on...
+  - If its false push it 1 day to learn it at the next day
+  - ability to set goals exp: learn 140 words in 1 week
+  - func to create a learningplan based on the wishes
+  - abiliy to set day goals in this plans exp: 20 voc a day
+  - reminder to learn and repeat the Set
+  - Make Animation in LearnApp
+  - Add Filter Function on Stack.js
+  - Add Styles to DropDown Menu Stack.js:281
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
+## Add this
+
+```js
+babel.config.js
+---------------
+
+module.exports = {
+  presets: ["@babel/preset-env", "@babel/preset-react"],
+};
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
